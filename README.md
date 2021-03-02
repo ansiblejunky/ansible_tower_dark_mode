@@ -50,8 +50,8 @@ To match the new dark mode style for Ansible Tower you can additionally change t
 
 ## References
 
-[Love dark mode? Here’s why you may still want to avoid it](https://www.androidauthority.com/dark-mode-1046425/)
-[Using Custom Logos in Ansible Tower](https://docs.ansible.com/ansible-tower/latest/html/administration/custom_rebranding.html)
+- [Love dark mode? Here’s why you may still want to avoid it](https://www.androidauthority.com/dark-mode-1046425/)
+- [Using Custom Logos in Ansible Tower](https://docs.ansible.com/ansible-tower/latest/html/administration/custom_rebranding.html)
 
 ## Author
 
