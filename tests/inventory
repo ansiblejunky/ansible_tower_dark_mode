@@ -1,0 +1,10 @@
+[tower]
+tower.example.com
+
+[database]
+
+[all:vars]
+# vagrant settings
+ansible_ssh_user=vagrant
+ansible_private_key_file='~/.vagrant.d/insecure_private_key'
+ansible_ssh_common_args='-o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o PasswordAuthentication=no -o IdentitiesOnly=yes'

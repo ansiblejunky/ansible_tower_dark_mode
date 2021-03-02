@@ -1,0 +1,29 @@
+---
+- name: Find specific application CSS filename
+  find:
+    paths: "{{ tower_dark_mode_css_path }}"
+    patterns: 'app.*.css'
+  register: r_results
+
+- name: Show CSS style sheet filename 
+  debug:
+    var: r_results.files[0].path
+
+- name: Insert/remove lines at BOF to import custom theme settings
+  blockinfile:
+    path: "{{ r_results.files[0].path }}"
+    insertbefore: BOF
+    marker: "/* {mark} ANSIBLE MANAGED BLOCK */"
+    state: "{{ tower_dark_mode }}"
+    backup: yes
+    block: |
+      @import url('darkmode.css');
+  become: true
+
+- name: Push custom theme style sheet
+  template:
+    src: "{{ tower_dark_mode_css_template }}"
+    dest: "{{ tower_dark_mode_css_path }}/darkmode.css"
+    backup: no
+  become: true
+  when: tower_dark_mode == "present"

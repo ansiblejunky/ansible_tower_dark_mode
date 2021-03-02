@@ -1,0 +1,303 @@
+{# Override root (default) colors with dark theme #}
+:root {
+    --primary-color: #121212;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #ffffff;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: var(--primary-color);
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+    --alert-color: #B00020;
+}
+
+{# Screens with lists of objects, such as credentials, templates, etc #}
+.at-RowAction {
+  background: unset !important;
+}
+.at-RowItem-value {
+  color: gray !important;
+}
+.List-noItems {
+  background-color: var(--primary-color) !important;
+}
+.at-List--empty {
+  background-color: var(--primary-color) !important;
+}
+.at-List-toolbar-item.active {
+  background: gray !important;
+}
+.at-List-toolbar-item {
+  color: gray;
+}
+.at-List-toolbarDropdown-toggleText {
+  color: gray;
+}
+.List-tableRow {
+    color: gray !important;
+}
+.List-tableHeaderRow {
+  background-color: black !important;
+  border: 2px solid !important;
+}
+.List-tableRow:hover {
+  background-color: transparent !important;
+  border-left: 2px solid white !important;
+}
+
+
+
+{# Popup windows such as 'Add Permissions' or 'Add Users' #}
+.AddPermissions-content {
+  border: 3px solid white !important;
+  background-color: var(--primary-color) !important;
+}
+.modal-content {
+  border: 3px solid white !important;
+  background-color: var(--primary-color) !important;
+}
+
+
+
+{# Links  #}
+a {
+  color: white !important;
+}
+a:hover,
+a:focus {
+  color: #1778c3;
+}
+
+
+
+{# Search fields - they show up in various places in Ansible Tower #}
+.SmartSearch-searchTermContainer {
+  background-color: unset !important;
+}
+.SmartSearch-searchTermContainer input:placeholder-shown {
+  background-color: var(--primary-color) !important;
+}
+.SmartSearch-input {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+
+{# Settings screen: showing squares for Authentication, Jobs, System, User Interface and License #}
+.at-Card {
+  background-color: var(--primary-color) !important;
+  border-left: unset !important;
+  border: 1px solid white !important; 
+}
+.at-Card:hover {
+  background-color: #1778c3 !important;
+}
+.at-Card-text {
+  color: gray !important;
+}
+.at-Card-title {
+  color: white !important;
+}
+
+
+{# License screen: https://tower.example.com/#/settings/license #}
+.License-field--content {
+  color: white !important;
+}
+.License-body {
+  color: white !important;
+}
+
+
+
+{# Organizations screen: https://tower.example.com/#/organizations #}
+.OrgCards-card {
+  background-color: var(--primary-color) !important;
+}
+.MultiSelectPreview-selectedItems {
+  background-color: var(--primary-color) !important;
+}
+
+
+
+
+
+{# Login screen: https://tower.example.com/#/login #}
+.LoginModal-content {
+  background-color: var(--primary-color) !important;
+  border: 1px solid white !important;
+}
+
+
+
+
+{# About screen: https://tower.example.com/#/about #}
+#cowsay {
+  padding-left: 30px;
+  max-width: 340px;
+  background-color: white;
+  border-style: none;
+}
+.modal-content {
+  background-color: darkgray !important;
+  border: 2px solid white !important;
+}
+.About-cowsayCode {
+  background-color: darkgray !important;
+}
+pre {
+  color: black !important;
+}
+.close {
+  color: black !important; 
+}
+
+
+
+{# Job Results screen #}
+.JobResults-resultRowText {
+  color: gray;
+}
+.HostStatusBar-noData {
+  background-color: unset !important;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.at-Input-button, .at-Input-button:active, .at-Input-button:hover, .at-Input-button:focus {
+  background-color: unset !important;
+  border: 1px solid white;
+}
+
+
+
+
+{# Dashboard screen #}
+.DashboardGraphs {
+  background-color: black !important;
+}
+.DashboardCounts-buttonStyle {
+  background-color: black !important;
+}
+.Dashboard-list {
+  background-color: black !important;
+}
+.DashboardGraphs-filterDropdownText, .DashboardGraphs-filterDropdownText:hover, .DashboardGraphs-filterDropdownText:focus, .DashboardGraphs-filterDropdownText:active {
+  color: black !important;
+}
+.at-Layout-topNav .at-Layout-topNavItem:focus,
+.at-Layout-topNav .at-Layout-topNavItem:hover,
+.at-Layout-topNav .at-Layout-topNavItem.is-currentRoute {
+  background-color: transparent !important;
+  border-bottom: 2px solid #ffffff !important;
+}
+
+
+{# Management Jobs screen #}
+.MgmtCards-card {
+  background-color: var(--primary-color) !important;
+}
+.MgmtCards-label {
+  color: white !important;
+}
+p.ng-binding {
+  color: gray !important;
+}
+
+
+{# Field: Panel entry fields #}
+.Form-formGroup input.form-control {
+  background-color: var(--primary-color) !important;
+}
+.form-control {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+{# Field: Panel dropdown fields #}
+.Form-dropDown {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+.select2-dropdown {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+.Form-dropDownContainer .form-control + .select2 .select2-selection {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+{# Field: Panel spinner fields #}
+span.ui-spinner.ui-widget.ui-widget-content.ui-corner-all {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+.ui-spinner-input {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+{# Button: Panel exit button #}
+.Form-exit {
+  background-color: black !important;
+}
+
+
+{# Field: Code Fields that allow YAML or JSON data, for example Extra Variables #}
+.CodeMirror-scroll {
+  background: var(--primary-color) !important;
+  color: white !important;
+}
+.CodeMirror pre {
+  color: inherit;
+}
+.cm-s-default .cm-meta {
+  color: lightgreen;
+}
+.cm-s-default .cm-def {
+  color: lightgreen;
+}
+.cm-s-default .cm-atom {
+  color: lightgreen;
+}
+
+
+
+
+{# Left container panel #}
+.at-Layout-sideContainer {
+  background: black !important;
+}
+.at-Layout-side .at-Layout-sideNavItem {
+  color: gray !important;
+}
+.at-Layout-side .at-Layout-sideNavItem:hover, .at-Layout-side .at-Layout-sideNavItem.is-active {
+  background: none !important;
+  border-left: 2px solid #ffffff !important;
+}
+
+
+{# General layout properties #}
+body {
+  background-color: var(--primary-color) !important;
+}
+.at-Layout-topNav {
+  background-color: var(--primary-color) !important;
+}
+.at-Layout-content {
+  background-color: var(--primary-color) !important;
+}
+.BreadCrumb {
+  background-color: var(--primary-color) !important;
+}
+.BreadCrumb-list {
+  background-color: var(--primary-color) !important;
+}
+.at-Panel {
+  background-color: black !important;
+}
+
+
+

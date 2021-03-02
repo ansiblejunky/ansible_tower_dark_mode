@@ -1,0 +1,3 @@
+---
+tower_dark_mode_css_path: '/var/lib/awx/public/static/css'
+tower_dark_mode_css_template: 'darkmode.css.j2'

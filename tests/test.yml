@@ -1,0 +1,16 @@
+---
+# Enable Ansible Tower dark mode:
+#   ansible-playbook -i inventory test.yml -e tower_darkmode=present
+# Disable Ansible Tower dark mode:
+#   ansible-playbook -i inventory test.yml -e tower_darkmode=absent
+
+- hosts: tower
+  gather_facts: false
+  
+  tasks:
+  
+  - include_role:
+      name: ../..
+    vars:
+      tower_dark_mode: present
+
