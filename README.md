@@ -55,7 +55,7 @@ To match the new dark mode style for Ansible Tower you can additionally change t
 
 ## Author
 
-John Wadleigh
+John Wadleigh  
 Senior Architect @ Red Hat
 
 https://www.ansiblejunky.com/
