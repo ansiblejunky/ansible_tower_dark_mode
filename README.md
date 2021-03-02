@@ -6,10 +6,7 @@ Enable/disable **dark mode** for Ansible Tower and customize it as you wish.
 
 Here are some screenshots showing comparisons between Ansible Tower `light mode` (standard mode) and the new `dark mode`.
 
-![Login - Dark Mode](images/login-dark.png)
-![Dashboard - Dark Mode](images/dashboard-dark.png)
-![Jobs - Dark Mode](images/jobs-dark.png)
-![Templates - Dark Mode](images/templates-dark.png)
+![Dark Mode](images/tower-darkmode.jpg)
 
 ## Background
 
